@@ -1076,7 +1076,7 @@ html {
 body,
 .htmlarea-content-body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.55;
   color: #333333;
   background-color: #fff;
@@ -3097,12 +3097,17 @@ select[multiple].input-lg {
   white-space: nowrap;
   vertical-align: middle;
   touch-action: manipulation;
+  cursor: pointer;
   background-image: none;
   border: 1px solid transparent;
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.55;
   border-radius: 0px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .btn:focus,
 .btn:active:focus,
@@ -12146,9 +12151,18 @@ a.pswp__share--download:hover {
 body,
 .htmlarea-content-body {
   margin: 20px;
+  font-size: 12px;
 }
-.cke_combopanel {
-  min-width: 200px;
+.btn,
+.cc-btn {
+  cursor: initial;
+  -webkit-user-select: initial;
+  -moz-user-select: initial;
+  -ms-user-select: initial;
+  user-select: initial;
+}
+a:hover {
+  text-decoration: initial;
 }
 .text-column {
   position: relative;
